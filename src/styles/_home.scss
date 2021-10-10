@@ -1,0 +1,52 @@
+
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12rem;
+    
+        h2{
+            letter-spacing: 4px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }
+        
+        .home-name{
+            letter-spacing: 2px;
+            font-size: 3em;
+            font-weight: 800;
+        }
+        
+        .name-color{
+            color: $logo-color;
+        }
+        
+        p{
+            letter-spacing: 2px;
+            // font-size: 2em;
+        }
+    
+        .btn{
+            letter-spacing: 2px;
+            color: $text-color;
+            display: inline-block;
+            padding: 0.7rem 1rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            background: $logo-color;
+            border-radius: 2rem;
+        
+        }
+        
+        .btn:hover{
+            background: $header-color;
+            transition: all 0.3s ease-out;
+            border: 2px solid $logo-color;
+        }
+    }
+}

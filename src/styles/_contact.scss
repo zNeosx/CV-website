@@ -1,0 +1,27 @@
+.contact-container{
+    height: 100vh;
+    .contact-title{
+        width: 80%;
+        margin: auto;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 3em;
+        border-bottom: 2px solid $header-color;
+    }
+    .warning{
+        padding-top: 30px;
+        text-align: center;
+        strong{
+            font-size: 1.5em;
+            border-bottom: 3px solid $logo-color;
+        }
+    }
+    .formulaire{
+        // background: chocolate;
+        padding: 40px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+}

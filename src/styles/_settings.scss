@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+/* =========== FONTS ================ */
+
+$font-1: "Poppins", sans-serif;
+
+/* =========== COLORS ================ */
+
+$text-color: #f1f1f1; 
+$body-color: #111;  
+$logo-color: rgb(214,50,35); 
+$logo-color2: rgb(52,52,52); 
+$header-color: $logo-color2;
+$link-color: $body-color; 
+
+/* =========== MARGE ============= */
+
+$page-width: 75vw;
+$page-height: 100vh; 
+$body-padding: 10vh 10vw; 
+$glass-padding: 1vh 1vw; 
+
+$header-body-radius: 2rem; 
+$header-width: 25vw; 
+$header-height: 100vh;   
+
+/* =========== BASE ============== */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-1;
+}
+
+html{
+    font-size: 95%;
+    overflow-x: hidden;
+}
+
+.body{
+    display: flex;
+}
+
+section{
+    width: $page-width;
+    height: $page-height;
+    background: $body-color;
+    color: $text-color;
+}
+
+#menu{
+    height: 10vh;
+    width: 100%;
+    display: none;
+}
+
+.title-space{
+    letter-spacing: 3px;
+}
+
+
+
+
+
+// @media (max-width:400px){
+
+//     header{
+//         width: 100vw;
+//     }
+
+//     .heading{
+//         margin:0 3rem;
+//     }
+
+//     .about .row .counter .box{
+//         width: 100%;
+//     }
+ 
+//     .education .box-container .box{
+//         width:100%;
+//     }
+
+//     .portfolio .box-container .box{
+//         width:100%;
+//     }
+
+//     .contact .row form{
+//         margin:3rem 0;
+//     }
+
+//  }

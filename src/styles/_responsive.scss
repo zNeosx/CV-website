@@ -1,0 +1,37 @@
+@media (max-width:1200px){
+
+    html{
+        font-size: 85%;
+    }
+ 
+}
+
+@media (max-width: 900px){
+    .body{
+        flex-direction: column;
+    }
+
+    #header{
+        display: none;
+    }
+
+    #page{
+        width: 100%;
+    }
+
+    #menu{
+        display: block;
+        background: $body-color;
+    }
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 65%;
+    }
+    
+    .homepage .home-container{
+        padding: 0 5rem;
+    }
+}

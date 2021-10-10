@@ -1,0 +1,76 @@
+.header{
+    width: $header-width;
+    height: $header-height;
+    background: $header-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .user{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .header-logo{
+            background-image: url('../components/images/VAies.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            border: 0.7rem solid $logo-color;
+            border-radius: 50%;
+            width: 15rem;
+            height: 15rem;
+            margin-bottom: 1rem;
+        }
+    
+        .header-name, .header-desc{
+            color: $text-color;
+        }
+        
+        .header-name{
+            // background: darkgoldenrod;
+            letter-spacing: 3px;
+            font-size: 2rem; 
+        }
+        
+        .header-desc{
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    .nav-header{
+        width: 100%;
+    
+        .nav-ul{
+            padding: 1rem 3rem;
+
+            .nav-link{
+                letter-spacing: 1px;
+                color: $text-color;
+                background: $link-color;
+                display: block;
+                text-align: center;
+                padding: 0.5rem 2rem;
+                margin-bottom: 0.7rem;
+                border-radius: 3rem;
+            }
+
+            .nav-link:hover{
+                background: $logo-color;
+                opacity: 0.9;
+            }
+
+            .nav-active{
+                background: $logo-color;
+            }
+        }
+    }
+}
+
+
+
