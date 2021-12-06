@@ -1,15 +1,15 @@
-.portefolio-container{
-
-    .portefolio-title{
-        width: 80%;
-        margin: auto;
-        padding-top: 1rem;
-        text-align: center;
-        font-size: 3em;
-        border-bottom: 2px solid $header-color;
-    }
-    p{
-        margin-top: 18rem;
-        text-align: center;
-    }
+.portefolio-container {
+  .portefolio-title {
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 2px solid $header-color;
+  }
+  p {
+    margin-top: 18rem;
+    font-size: 1.2em;
+    text-align: center;
+  }
 }

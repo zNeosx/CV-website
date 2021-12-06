@@ -1,51 +1,53 @@
+.skills-container {
+  .skills-title {
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 2px solid $header-color;
+  }
 
-.skills-container{
-    .skills-title{
-        width: 80%;
-        margin: auto;
-        padding-top: 1rem;
-        text-align: center;
-        font-size: 3em;
-        border-bottom: 2px solid $header-color;
-    }
-    
-    .grid{
-        margin-top: 50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2rem;
+  .grid {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem;
 
-        .grid-box{
-            background: $logo-color2;
-            border-radius: 2rem;
-            text-align: center;
-            padding: 1rem 3rem;
+    .grid-box {
+      background: $logo-color2;
+      border-radius: 2rem;
+      text-align: center;
+      padding: 1rem 3rem;
 
-            .box-title{
-                color: $logo-color;
-                border-bottom: 2px solid $text-color;
-                text-transform: uppercase;
-                font-weight: 800;
-                letter-spacing: 2px;
-            }
+      .box-title {
+        color: $logo-color;
+        border-bottom: 2px solid $text-color;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
 
-            ul{
-                margin-top: 10px;
-            }
+      ul {
+        margin-top: 20px;
+        li {
+          font-size: 1.1em;
         }
-
-        .grid-box:nth-child(2){
-            grid-column-start: 3;
-            grid-row-start: 1;
-        }
-
-        .grid-box:nth-child(3){
-            grid-column-start: 2;
-            grid-row-start: 2;
-        }
+      }
     }
 
+    .grid-box:nth-child(2) {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+
+    .grid-box:nth-child(3) {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+  }
 }

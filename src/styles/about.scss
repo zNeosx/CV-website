@@ -1,115 +1,112 @@
+.about {
+  letter-spacing: 2px;
 
-.about{
+  .section-title {
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 2px solid $header-color;
+  }
+
+  .info {
+    // background: cornflowerblue;
+    padding: 1rem 5rem;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      color: $logo-color;
+      opacity: 0.9;
+
+      span {
+        color: $text-color;
+      }
+    }
+
+    .cv__link {
+      background-color: $logo-color;
+      width: max-content;
+      margin-top: 10px;
+      padding: 10px 10px;
+      color: #f1f1f1;
+      border-radius: 15px;
+    }
+
+    .cv__link:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+  }
+
+  .box-title {
+    // background:forestgreen;
+    margin-left: 41%;
+    font-size: 2em;
     letter-spacing: 2px;
+  }
 
-    .section-title{
-        width: 80%;
-        margin: auto;
-        padding-top: 1rem;
-        text-align: center;
-        font-size: 3em;
-        border-bottom: 2px solid $header-color;
-    }
-    
-    .info{
-        // background: cornflowerblue;
-        padding: 1rem 5rem;
-        // margin-top: px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-        h3{
-            color: $logo-color;
-            opacity: 0.9;
-            
-            span{
-                color:$text-color;
-            }
-        }
-        #cv-btn button{
-            margin-top: 10px;
-            letter-spacing: 1px;
-            color: $text-color; 
-            background: $logo-color;
-            // cursor: pointer;
-            padding: 1rem 1rem;
-            border-radius: 2rem;
-        }
-        #cv-btn button:hover{
-            background: $header-color;
-            transition: all 0.3s ease-out;
-            border: 2px solid $logo-color;
-        }
-    }
+  .box {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 0.9em;
+    padding: 2px 0;
+    margin-top: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
 
-    .box-title{
-        // background:forestgreen;
-        margin-left: 41%;
-        font-size: 2em;
-        letter-spacing: 2px;
-    }
+    .box-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      // background: goldenrod;
 
-    .box{
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 0.9em;
-        padding: 2px 0;
-        margin-top: 20px;
-        flex: 0 0 100%;
-        max-width: 100%;
+      .box-item-inner {
+        padding: 2px;
+        margin-bottom: 10px;
+        border-radius: 5px;
         position: relative;
 
-        .box-item{
-            flex: 0 0 100%; 
-            max-width: 100%;
-            // background: goldenrod;
-
-            .box-item-inner{
-                padding: 2px;
-                margin-bottom: 10px;
-                border-radius: 5px;
-                position: relative;
-
-                .icon{
-                    height: 40px;
-                    width: 40px;
-                    background: $logo-color2;
-                    border: 1px solid $logo-color;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 40px;
-                    position: absolute;
-                    top: 18px;
-                }
-            }
+        .icon {
+          height: 40px;
+          width: 40px;
+          background: $logo-color2;
+          border: 1px solid $logo-color;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          position: absolute;
+          top: 18px;
         }
-
-        .box-item:nth-child(odd){
-            padding-right: calc(50% + 40px);
-            text-align: right;
-            .icon{
-                right: -60px;
-            }
-        }
-
-        .box-item:nth-child(even){
-            padding-left: calc(50% + 40px);
-            .icon{
-                left: -60px;
-            }
-        }
-        
+      }
     }
 
-    .box::before{
-        content: '';
-        width: 1px;
-        height: 100%;
-        left: 50%;
-        top: 0;
-        background: $logo-color;
-        position: absolute;
+    .box-item:nth-child(odd) {
+      padding-right: calc(50% + 40px);
+      text-align: right;
+      .icon {
+        right: -60px;
+      }
     }
 
+    .box-item:nth-child(even) {
+      padding-left: calc(50% + 40px);
+      .icon {
+        left: -60px;
+      }
+    }
+  }
+
+  .box::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: $logo-color;
+    position: absolute;
+  }
 }
